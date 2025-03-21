@@ -32,7 +32,7 @@ public class Assignment {
 			driver.findElement(By.xpath("//button[@type='submit']")).click();
 			Thread.sleep(2000);  
 			
-		    TakesScreenshot ts=(TakesScreenshot)driver;
+		    ////TakesScreenshot ts=(TakesScreenshot)driver;
 		    File temp = ts.getScreenshotAs(OutputType.FILE);
 		    File perm= new File("./Screenshot/login.png");
 		    FileHandler.copy(temp, perm);
